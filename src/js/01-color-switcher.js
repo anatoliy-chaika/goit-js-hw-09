@@ -10,6 +10,8 @@ btnStopRef.disabled = true;
 
 btnStartRef.addEventListener('click', changeBgColor);
 
+let timerId = null;
+
 function changeBgColor() {
   btnStartRef.disabled = true;
   btnStopRef.disabled = false;
