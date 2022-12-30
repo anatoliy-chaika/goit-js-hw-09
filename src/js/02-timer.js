@@ -34,9 +34,8 @@ let timerId = null;
 btnStartRef.addEventListener('click', startTimer);
 
 function startTimer() {
+  btnStartRef.disabled = true;
   const timerId = setInterval(() => {
-    btnStartRef.disabled = true;
-
     const currentTime = new Date();
     const futureDate = new Date(inputRef.value);
     const deltaTimes = futureDate.getTime() - currentTime.getTime();
